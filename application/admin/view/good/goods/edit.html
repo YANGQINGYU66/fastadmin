@@ -1,0 +1,58 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Servicename')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-serviceName" data-rule="required" class="form-control" name="row[serviceName]" type="text" value="{$row.serviceName|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Serviceprice')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-servicePrice" data-rule="required" class="form-control" step="0.01" name="row[servicePrice]" type="number" value="{$row.servicePrice|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Serviceimg')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-serviceImg" class="form-control" name="row[serviceImg]" type="text" value="{$row.serviceImg|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Favourableprice')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-favourablePrice" class="form-control" step="0.01" name="row[favourablePrice]" type="number" value="{$row.favourablePrice|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Serviceparticularsimg')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-serviceParticularsImg" class="form-control" name="row[serviceParticularsImg]" type="text" value="{$row.serviceParticularsImg|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Serviceparticulars')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-serviceParticulars" class="form-control" name="row[serviceParticulars]" type="text" value="{$row.serviceParticulars|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Ablenum')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-ableNum" data-rule="required" class="form-control" name="row[ableNum]" type="number" value="{$row.ableNum|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Salenum')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-saleNum" data-rule="required" class="form-control" name="row[saleNum]" type="number" value="{$row.saleNum|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
